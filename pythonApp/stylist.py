@@ -5,20 +5,19 @@ import gzip
 import shutil
 import os
 
-# Compress the file with error handling
-input_file = 'pythonApp/models/Images_features.pkl'
-output_file = 'pythonApp/models/Images_features.pkl.gz'
+compressed_file = 'pythonApp/models/Images_features.pkl.gz'
+output_file = 'pythonApp/models/Images_features.pkl'
 
-if os.path.exists(input_file):
+# Decompress only if the uncompressed file does not exist
+if os.path.exists(compressed_file) and not os.path.exists(output_file):
     try:
-        with open(input_file, 'rb') as f_in:
-            with gzip.open(output_file, 'wb') as f_out:
+        with gzip.open(compressed_file, 'rb') as f_in:
+            with open(output_file, 'wb') as f_out:
                 shutil.copyfileobj(f_in, f_out)
-        print(f'File {input_file} has been compressed to {output_file}')
+        print(f'File {compressed_file} has been decompressed to {output_file}')
     except Exception as e:
-        print(f"Error compressing the file: {e}")
-else:
-    print(f"File {input_file} not found!")
+        print(f"Error decompressing the file: {e}")
+
 
 # PersonalStylist class
 class PersonalStylist:
