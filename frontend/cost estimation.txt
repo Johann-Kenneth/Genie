@@ -1,0 +1,97 @@
+Feature,Role,Time (Days),Time (Hours),Cost (Low),Cost (High)
+User Registration & Profile Management,Solution Architect,1-2,8-16,$960,$4,000
+User Registration & Profile Management,Backend Developer,5-7,40-56,$2,400,$8,400
+User Registration & Profile Management,Frontend Developer,3-5,24-40,$1,200,$4,800
+User Registration & Profile Management,Mobile Developer,4-6,32-48,$1,920,$7,200
+User Registration & Profile Management,UI/UX Designer,4-5,32-40,$1,600,$4,800
+User Registration & Profile Management,QA Engineer,2-3,16-24,$640,$2,400
+User Registration & Profile Management,DevOps Engineer,1-2,8-16,$640,$2,880
+Total for User Registration & Profile Management,,3-4 weeks,160-224 hours,$9,760,$34,480
+Restaurant Listings & Search Functionality,Solution Architect,2-3,16-24,$1,920,$6,000
+Restaurant Listings & Search Functionality,Backend Developer,6-8,48-64,$2,880,$9,600
+Restaurant Listings & Search Functionality,Frontend Developer,5-7,40-56,$2,000,$6,720
+Restaurant Listings & Search Functionality,Mobile Developer,6-8,48-64,$2,880,$9,600
+Restaurant Listings & Search Functionality,UI/UX Designer,5-7,40-56,$2,000,$6,720
+Restaurant Listings & Search Functionality,QA Engineer,3-4,24-32,$960,$3,200
+Restaurant Listings & Search Functionality,DevOps Engineer,1-2,8-16,$640,$2,880
+Total for Restaurant Listings & Search Functionality,,4-6 weeks,240-320 hours,$13,380,$44,720
+Menu Management,Solution Architect,2,16,$1,920,$4,000
+Menu Management,Backend Developer,5-7,40-56,$2,400,$8,400
+Menu Management,Frontend Developer,4-6,32-48,$1,600,$5,760
+Menu Management,Mobile Developer,4-6,32-48,$1,920,$7,200
+Menu Management,UI/UX Designer,3-4,24-32,$1,200,$3,840
+Menu Management,QA Engineer,2-3,16-24,$640,$2,400
+Menu Management,DevOps Engineer,1,8,$640,$1,440
+Total for Menu Management,,3-4 weeks,168-224 hours,$8,720,$33,600
+Real-Time Order Tracking,Solution Architect,3-4,24-32,$2,880,$8,000
+Real-Time Order Tracking,Backend Developer,10-15,80-120,$4,800,$18,000
+Real-Time Order Tracking,Frontend Developer,6-8,48-64,$2,400,$7,680
+Real-Time Order Tracking,Mobile Developer,7-10,56-80,$3,360,$12,000
+Real-Time Order Tracking,UI/UX Designer,4-6,32-48,$1,600,$5,760
+Real-Time Order Tracking,QA Engineer,3-4,24-32,$960,$3,200
+Real-Time Order Tracking,DevOps Engineer,3-4,24-32,$1,920,$5,760
+Total for Real-Time Order Tracking,,6-8 weeks,288-400 hours,$17,920,$60,400
+Payment Integration,Solution Architect,2-3,16-24,$1,920,$6,000
+Payment Integration,Backend Developer,7-10,56-80,$3,360,$12,000
+Payment Integration,Frontend Developer,4-5,32-40,$1,600,$4,800
+Payment Integration,Mobile Developer,5-7,40-56,$2,400,$8,400
+Payment Integration,UI/UX Designer,3-4,24-32,$1,200,$3,840
+Payment Integration,QA Engineer,3-4,24-32,$960,$3,200
+Payment Integration,DevOps Engineer,2,16,$1,280,$2,880
+Total for Payment Integration,,4-6 weeks,192-256 hours,$12,720,$39,120
+Push Notifications (Real-Time Alerts),Solution Architect,1-2,8-16,$960,$3,200
+Push Notifications (Real-Time Alerts),Backend Developer,3-5,24-40,$1,440,$6,000
+Push Notifications (Real-Time Alerts),Frontend Developer,3-4,24-32,$1,200,$3,840
+Push Notifications (Real-Time Alerts),Mobile Developer,5-7,40-56,$2,400,$8,400
+Push Notifications (Real-Time Alerts),UI/UX Designer,2-3,16-24,$800,$2,880
+Push Notifications (Real-Time Alerts),QA Engineer,2-3,16-24,$640,$2,400
+Push Notifications (Real-Time Alerts),DevOps Engineer,1-2,8-16,$640,$3,200
+Total for Push Notifications (Real-Time Alerts),,3-4 weeks,128-208 hours,$7,080,$24,920
+Ratings & Reviews System,Solution Architect,2,16,$1,920,$4,000
+Ratings & Reviews System,Backend Developer,4-5,32-40,$1,920,$6,000
+Ratings & Reviews System,Frontend Developer,3-4,24-32,$1,200,$3,840
+Ratings & Reviews System,Mobile Developer,4-5,32-40,$1,920,$6,000
+Ratings & Reviews System,UI/UX Designer,3-4,24-32,$1,200,$3,840
+Ratings & Reviews System,QA Engineer,2-3,16-24,$640,$2,400
+Ratings & Reviews System,DevOps Engineer,1-2,8-16,$640,$2,880
+Total for Ratings & Reviews System,,3-4 weeks,160-224 hours,$7,840,$26,960
+Order History,Solution Architect,1,8,$960,$2,400
+Order History,Backend Developer,3-5,24-40,$1,440,$6,000
+Order History,Frontend Developer,3-4,24-32,$1,200,$3,840
+Order History,Mobile Developer,3-5,24-40,$1,440,$6,000
+Order History,UI/UX Designer,2,16,$800,$2,400
+Order History,QA Engineer,2,16,$640,$2,400
+Order History,DevOps Engineer,1,8,$640,$2,880
+Total for Order History,,3 weeks,136-200 hours,$6,420,$24,920
+Cart Management,Solution Architect,1-2,8-16,$960,$3,200
+Cart Management,Backend Developer,4-6,32-48,$1,920,$7,200
+Cart Management,Frontend Developer,3-5,24-40,$1,200,$4,800
+Cart Management,Mobile Developer,4-6,32-48,$1,920,$7,200
+Cart Management,UI/UX Designer,2-3,16-24,$800,$2,880
+Cart Management,QA Engineer,2,16,$640,$2,400
+Cart Management,DevOps Engineer,1,8,$640,$2,880
+Total for Cart Management,,3-4 weeks,144-224 hours,$7,120,$28,560
+Loyalty Program,Solution Architect,3,24,$2,880,$6,000
+Loyalty Program,Backend Developer,6-8,48-64,$2,880,$9,600
+Loyalty Program,Frontend Developer,5-7,40-56,$2,000,$6,720
+Loyalty Program,Mobile Developer,5-7,40-56,$2,400,$8,400
+Loyalty Program,UI/UX Designer,3-4,24-32,$1,200,$3,840
+Loyalty Program,QA Engineer,3-4,24-32,$960,$3,200
+Loyalty Program,DevOps Engineer,1-2,8-16,$640,$2,880
+Total for Loyalty Program,,4-6 weeks,224-304 hours,$12,960,$40,640
+Geo-location Services,Solution Architect,2,16,$1,920,$4,000
+Geo-location Services,Backend Developer,5-7,40-56,$2,400,$8,400
+Geo-location Services,Frontend Developer,4-6,32-48,$1,600,$5,760
+Geo-location Services,Mobile Developer,4-6,32-48,$1,920,$7,200
+Geo-location Services,UI/UX Designer,3,24,$1,200,$3,840
+Geo-location Services,QA Engineer,2-3,16-24,$640,$2,400
+Geo-location Services,DevOps Engineer,1,8,$640,$2,880
+Total for Geo-location Services,,3-4 weeks,160-224 hours,$8,720,$34,480
+Multi-language Support,Solution Architect,2,16,$1,920,$4,000
+Multi-language Support,Backend Developer,4-6,32-48,$1,920,$7,200
+Multi-language Support,Frontend Developer,3-4,24-32,$1,200,$3,840
+Multi-language Support,Mobile Developer,4-5,32-40,$1,600,$6,000
+Multi-language Support,UI/UX Designer,3,24,$1,200,$3,840
+Multi-language Support,QA Engineer,2-3,16-24,$640,$2,400
+Multi-language Support,DevOps Engineer,1-2,8-16,$640,$2,880
+Total for Multi-language Support,,3-4 weeks,144-200 hours,$7,520,$28,160
