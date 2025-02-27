@@ -14,7 +14,8 @@ const corsOptions = {
       if (!origin || 
           origin === 'http://localhost:3000' || 
           origin.endsWith('-joos-projects-206a02bd.vercel.app') || 
-          origin === 'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app') {
+          origin === 'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app'|| 
+          origin === 'https://stylgenie.vercel.app') {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
