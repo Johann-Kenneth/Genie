@@ -8,7 +8,10 @@ const chatbotRoutes = require('./routes/chatbot');
 dotenv.config();
 connectDB();
 const app = express();
-app.use(cors({ origin: '*'}));
+app.use(cors({
+    origin: 'https://stylgenie.vercel.app', // Allow the frontend to make requests
+    credentials: true,
+  }));
 app.use(express.json());
 app.use('/auth', authRoutes);
 app.use('/upload', uploadRoutes);

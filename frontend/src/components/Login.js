@@ -19,7 +19,7 @@ const Login = ({ setToken }) => {
   const login = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/auth/login', { username, password });
+      const res = await axios.post('https://genie-production-3591.up.railway.app/auth/login', { username, password });
       setToken(res.data.token);
       localStorage.setItem('token', res.data.token);
       navigate('/upload');

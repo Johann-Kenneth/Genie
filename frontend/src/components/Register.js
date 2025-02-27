@@ -26,7 +26,7 @@ useEffect(() => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/auth/register', { username, password });
+      const response = await axios.post('https://genie-production-3591.up.railway.app/auth/register', { username, password });
       setMessage(response.data.message);
       navigate('/login');
     } catch (error) {
