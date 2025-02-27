@@ -10,12 +10,11 @@ connectDB();
 const app = express();
 const corsOptions = {
     origin: (origin, callback) => {
-      const allowedOrigins = [
-        'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app',
-        'https://stylgenie-g549u50qf-joos-projects-206a02bd.vercel.app',
-        'http://localhost:3000'
-      ];
-      if (!origin || allowedOrigins.includes(origin)) {
+      // Allow localhost and any Vercel preview/production URL
+      if (!origin || 
+          origin === 'http://localhost:3000' || 
+          origin.endsWith('-joos-projects-206a02bd.vercel.app') || 
+          origin === 'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app') {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
