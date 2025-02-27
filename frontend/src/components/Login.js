@@ -17,20 +17,33 @@ const Login = ({ setToken }) => {
  }, []);
 
   const login = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post('https://genie-production-3591.up.railway.app/auth/login', { username, password });
-      setToken(res.data.token);
-      localStorage.setItem('token', res.data.token);
-      navigate('/upload');
-    } catch (error) {
-      setMessage('Invalid credentials');
-    }
-  };
+  e.preventDefault();  // Prevent form submission
 
-  const goToRegister = () => {
-    navigate('/register');
-  };
+  try {
+    const res = await axios.post('https://genie-production-3591.up.railway.app/auth/login', { username, password });
+    
+    // Check if the response contains a token and store it
+    if (res.data.token) {
+      setToken(res.data.token);  // Set the token in state
+      localStorage.setItem('token', res.data.token);  // Store the token in localStorage
+      navigate('/upload');  // Redirect to the upload page
+    } else {
+      setMessage('Login failed. No token received.');
+    }
+  } catch (error) {
+    // Handle different error types (e.g., network errors or invalid credentials)
+    if (error.response && error.response.status === 401) {
+      setMessage('Invalid credentials. Please try again.');
+    } else {
+      setMessage('An error occurred. Please try again later.');
+    }
+  }
+};
+
+const goToRegister = () => {
+  navigate('/register');  // Redirect to the registration page
+};
+
 
   const styles = {
     container: {

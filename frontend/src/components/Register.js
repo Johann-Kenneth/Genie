@@ -18,21 +18,37 @@ useEffect(() => {
     document.head.appendChild(link);
 }, []);
 
-  const register = async (e) => {
-    e.preventDefault();
-    if (password !== confirmPassword) {
-      setMessage('Passwords do not match');
-      return;
-    }
+const register = async (e) => {
+  e.preventDefault();
+  if (password !== confirmPassword) {
+    setMessage('Passwords do not match');
+    return;
+  }
 
-    try {
-      const response = await axios.post('https://genie-production-3591.up.railway.app/auth/register', { username, password });
-      setMessage(response.data.message);
-      navigate('/login');
-    } catch (error) {
+  const token = localStorage.getItem('jwtToken'); // Get the JWT token from localStorage
+
+  try {
+    const response = await fetch('https://genie-production-3591.up.railway.app/auth/register', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`, // Attach the token in the Authorization header
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, password }), // Pass the form data
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      setMessage('Registration successful');
+      navigate('/login'); // Redirect to login page after successful registration
+    } else {
       setMessage('Registration failed');
     }
-  };
+  } catch (error) {
+    setMessage('An error occurred during registration');
+  }
+};
+
   
 
   const styles = {

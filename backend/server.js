@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 app.use(cors({
-    origin: 'https://stylgenie.vercel.app', // Allow the frontend to make requests
+    origin: 'https://stylgenie-ovgfzfbd1-joos-projects-206a02bd.vercel.app', // Allow the frontend to make requests
     credentials: true,
   }));
 app.use(express.json());
