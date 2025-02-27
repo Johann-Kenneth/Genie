@@ -9,7 +9,18 @@ dotenv.config();
 connectDB();
 const app = express();
 const corsOptions = {
-    origin: 'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app',
+    origin: (origin, callback) => {
+      const allowedOrigins = [
+        'https://stylgenie-bqoxnupnv-joos-projects-206a02bd.vercel.app',
+        'https://stylgenie-g549u50qf-joos-projects-206a02bd.vercel.app',
+        'http://localhost:3000'
+      ];
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
